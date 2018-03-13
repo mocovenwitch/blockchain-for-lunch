@@ -61,6 +61,9 @@ Now it run in default mode, which is Fast Mode. If we rerun $geth, it runs into 
 ### attach to your private blockchain and explore
     $geth attach ipc:/Users/.../eth/chaindata/geth.ipc
 
+### cross domain issue
+    $geth --datadir=./chaindata --nodiscover --rpc --rpccorsdomain "*" --rpcapi eth,web
+
 ## `3-contract`
 
 ### What's in contract
